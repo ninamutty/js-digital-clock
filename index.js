@@ -1,10 +1,6 @@
 // Your code here
 $(document).ready(function() {
 
-  var thanksGiving = new Date(2016, 11[, 24[, 0[, 0[, 0]]]])
-  console.log(thanksGiving);
-
-
   var currentDate = function() {
     var today = new Date(Date.now());
     var options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
@@ -14,22 +10,6 @@ $(document).ready(function() {
   };
 
   var intervalID = setInterval(currentDate, 1000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
