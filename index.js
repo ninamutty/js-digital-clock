@@ -29,12 +29,8 @@ $(document).ready(function() {
       };
   }
 
-
-  var initializeClock = function(id, thankstime) {
-    var clock = document.getElementById(id);
-    console.log(clock);
-
-    var t = timeTillThanks(thankstime);
+  var initializeClock = function() {
+    var t = timeTillThanks();
     var clockFormat = 'days: ' + t.days + '<br>' +
                       'hours: '+ t.hours + '<br>' +
                       'minutes: ' + t.minutes + '<br>' +
@@ -42,27 +38,33 @@ $(document).ready(function() {
     $('#clock').html(clockFormat);
   }
 
-  // initializeClock('clock', thanksGiving);
-  // var intervalID = setInterval(timeTillThanks, 1000);
 
 
   var timeinterval = setInterval(initializeClock, 1000);
 
-
-
-
-
-
-
-
-
-
-
-  // 
-  // $('#clock').css('font-size', '3rem');
-  // $('#clock').css('color', 'black');
-  // $('#clock > h2').css('margin-top', '0%');
-  // $('#clock').css('padding', '0%');
-  // $('#clock').css('width', '70%');
-
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// thankstime
+
+// var clock = document.getElementById(id);
+// console.log(clock);
+
+
+//
+// $('#clock').css('font-size', '3rem');
+// $('#clock').css('color', 'black');
+// $('#clock > h2').css('margin-top', '0%');
+// $('#clock').css('padding', '0%');
+// $('#clock').css('width', '70%');
