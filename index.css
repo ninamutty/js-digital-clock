@@ -1,28 +1,30 @@
 body {
-    background-color: #FCD6AC;
+    background-color: rgb(94, 9, 3);
+    text-align: center;
+    color: white;
+}
+/*#600a03*/
+.header {
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 3.8rem;
+  padding: 0;
 }
 
-header {
-  font-family: 'Delius Unicase', 'Knewave', courier, monospace;
-  font-size: 3.3rem;
-  margin-left: 3%;
-}
+.header:first-of-type { margin-top: 15%;}
 
 div.container {
   vertical-align: top;
 }
 
 #clock {
-    height: 40%;
-    width: 50%;
-    margin: 3% auto 0 auto;
+    width: 80%;
+    margin: 0 auto 0 auto;
     position: relative;
     vertical-align: top;
-    font-family: 'Delius Unicase', 'Knewave', courier, monospace;
+    font-family: 'Cormorant SC', cursive;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.2rem;
     display: inline-block;
-
 }
 
 
@@ -32,4 +34,41 @@ img {
   display: inline-block;
   margin-left: 13%;
   vertical-align: center;
+}
+
+
+#snowflakeContainer {
+ position: absolute;
+ left: 0px;
+ top: 0px;
+}
+
+.snowflake {
+ padding-left: 15px;
+ font-family: Cambria, Georgia, serif;
+ font-size: 14px;
+ line-height: 24px;
+ position: fixed;
+ color: whitesmoke;
+ user-select: none;
+ z-index: 1000;
+}
+
+.snowflake:hover {
+ cursor: default;
+}
+
+#clockContainer {
+  width: 90%;
+  padding-bottom: 5%;
+  padding-bottom: 5%;
+  margin: auto;
+  border-radius: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#330302+0,600a03+73,600a03+74,600a03+74,600a03+74,600a03+74,600a03+74,600a03+74,600a03+75,600a03+75,600a03+75,600a03+75,590303+100 */
+  background: #330302; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #330302 0%, #600a03 73%, #600a03 74%, #600a03 74%, #600a03 74%, #600a03 74%, #600a03 74%, #600a03 74%, #600a03 75%, #600a03 75%, #600a03 75%, #600a03 75%, #590303 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  #330302 0%,#600a03 73%,#600a03 74%,#600a03 74%,#600a03 74%,#600a03 74%,#600a03 74%,#600a03 74%,#600a03 75%,#600a03 75%,#600a03 75%,#600a03 75%,#590303 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  #330302 0%,#600a03 73%,#600a03 74%,#600a03 74%,#600a03 74%,#600a03 74%,#600a03 74%,#600a03 74%,#600a03 75%,#600a03 75%,#600a03 75%,#600a03 75%,#590303 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#330302', endColorstr='#590303',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }

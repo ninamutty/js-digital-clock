@@ -1,7 +1,7 @@
 // Your code here
 $(document).ready(function() {
 
-  var thanksGiving = new Date('November 24, 2016 00:00:00');
+  var christmas = new Date('December 25, 2016 00:00:00');
 
 
   var currentDate = function() {
@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 
   var timeTillThanks = function() {
-      var t = Date.parse(thanksGiving) - Date.parse(currentDate());
+      var t = Date.parse(christmas) - Date.parse(currentDate());
       var seconds = Math.floor( (t/1000) % 60 );
       var minutes = Math.floor( (t/1000/60) % 60 );
       var hours = Math.floor( (t/(1000*60*60)) % 24 );
@@ -31,10 +31,11 @@ $(document).ready(function() {
 
   var initializeClock = function() {
     var t = timeTillThanks();
-    var clockFormat = 'days: ' + t.days + '<br>' +
-                      'hours: '+ t.hours + '<br>' +
-                      'minutes: ' + t.minutes + '<br>' +
-                      'seconds: ' + t.seconds;
+    var clockFormat = t.days + ' days, ' +
+                      t.hours + ' hours, ' +
+                      t.minutes + ' minutes, ' +
+                      t.seconds + ' seconds';
+                      // '<br>'
     $('#clock').html(clockFormat);
   }
 
